@@ -5,8 +5,24 @@ $(document).ready(function () {
         $("nav").toggleClass("show");
         $("header").toggleClass("full");
         $(".burger-menu").toggleClass("x");
-        //$(".burger-menu").css("float", "right");
+
     });
 
+    $('.burger-menu').click(function () {
 
+        $('.bar1').css('background-color', 'black');
+        $('.bar3').css('background-color', 'black');
+
+
+    });
+     
+     $('.bar1').click(function () {
+
+        $(this).css('background-color', 'white');
+        
+
+
+    });
+   
+    
 });
