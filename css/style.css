@@ -214,8 +214,8 @@ h1 {
     position: relative;
     bottom: 8em;
    justify-self:center;
-    
-    
+
+
 }
 
 
@@ -514,16 +514,17 @@ footer img {
 }
 
 
+#dashedLine {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 800px)  {
+
+  #dashedLine {
+  background-image: url(../images/dashed-line.svg);
 
 
-
-
-
-
-
-
-
-
-
-
-
+  }
+}
