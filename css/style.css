@@ -463,6 +463,10 @@ footer {
     width: 100%;
 }
 
+#signUp {
+  display: none;
+}
+
 .supporters {
     padding-bottom: 4%;
     text-align: center;
@@ -523,7 +527,6 @@ footer img {
     width: 30px;
 
 }
-
 
 #dashedLine {
   background-repeat: no-repeat;
