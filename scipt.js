@@ -1,6 +1,8 @@
 $(document).ready(function () {
     let index = 1;
 
+    $("#myVideo").get(0).play();
+
     $(".burger-menu").click(function () {
         $("nav").toggleClass("show");
         $("header").toggleClass("full");
