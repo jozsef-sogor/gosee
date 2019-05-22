@@ -766,7 +766,7 @@ footer img {
         grid-column: 1 /3;
     }
 
-    .why {
+    #why {
         margin-top: 7%;
         justify-self: center;
         align-self: start;
