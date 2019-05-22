@@ -11,8 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
     <div class="wrapper">
 
 
-<!--can you see it? -->
+
 
 
         <header>
@@ -41,7 +47,7 @@
             </div> <!-- End of .flex-container-->
 
 
-<!-- please put comments in the code -->
+            <!-- please put comments in the code -->
 
 
 
@@ -95,7 +101,7 @@
 
 
             </section>
-           <a href="#svg1"> <img class="arrow" src="images/arrow.png" alt="cta arrow"></a>
+            <img class="arrow" src="images/arrow.png" alt="cta arrow">
 
 
         </header>
@@ -113,7 +119,7 @@
 
             <h3 class="why">Why?</h3>
             <img class="officiallogo" src="images/logo/logo.png" alt="logo">
-            <ul class="inspiration">
+            <ul class="inspiration" data-aos="zoom-in-up" data-aos-offset="100">
                 <li>Because travel is about meaningful moments. </li>
                 <li>We will help you discover, relax, have fun and keep your spirit alive. </li>
                 <li>Inspire the community by sharing your experience.</li>
@@ -128,11 +134,12 @@
 
             <h3 class="how">How?</h3>
 
-<!--            <div id="dashedLine">-->
+            <!--            <div id="dashedLine">-->
+
+            <section class="plan">
 
 
-               <section class="plan">
-                <img class="appmockup1" src="images/frame1.jpg" alt="appmockup1">
+            <img class="appmockup1" src="images/frame1.jpg" alt="appmockup1">
 
                 <div class="content">
                     <h2>Imagine.Plan.Go!</h2>
@@ -193,26 +200,22 @@
             </section>
 
 
-          </main>
-
-<!--</div> End of #dashedLine-->
- <div id="treasure">
-        <div class="cache">
-            <div class="lid">
-
+            <div class="cache">
+                <div class="lid">
+                    <!--  <div id="signUp">
+                    <form action="">
+                      <input type="text">
+                      <input type="checkbox" name="" value="">
+                      <p>I consent to the processing of my name and e-mail adress etc etc</p>
+                      <button type="button" name="button"></button>
+                    </form>
+                  </div>-->
+                </div>
+                <!--.prize-->
+                <div class="base"></div>
             </div>
-            <!--.prize-->
-            <div id="signUp">
-                <form action="">
-                  <input type="text">
-                  <input type="checkbox" name="" value="">
-                  <p>I consent to the processing of my name and e-mail adress etc etc</p>
-                  <button type="button" name="button">Notify me</button>
-                </form>
-              </div>
-            <div class="base"></div>
-        </div>
-</div>
+            <!--</div> End of #dashedLine-->
+        </main>
 
         <footer>
 
