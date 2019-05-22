@@ -19,6 +19,7 @@ $(document).ready(function () {
 
     });
 
+
   /*   $('.bar1').click(function () {
 
         $(this).css('background-color', 'white');
@@ -27,5 +28,16 @@ this one does nothing basically.. changes the color from white to white when cli
 
     });
    */
+
+
+//box opening
+   var opened = 0;
+
+$(".cache").click(function(){
+  if ($(".cache").hasClass("opened")) {
+    $(".cache").removeClass("opened");
+  } else {$(".cache").addClass("opened");}
+
+});
 
 });

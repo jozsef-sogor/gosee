@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="script/script.js"></script>
+
 </head>
 
 <body>
@@ -84,7 +85,7 @@
                 <div id="video">
                     <video autoplay muted loop id="myVideo">
                         <source src="video/goseevideo2.mp4" type="video/mp4">
-                        </source>
+                      <!--  </source>-->
                     </video>
 
                     <div class="introtext">
@@ -95,7 +96,7 @@
 
 
             </section>
-            <a href="#why"><img class="arrow" src="images/arrow.png" alt="cta arrow"></a>
+          <a href="#why"><img class="arrow" src="images/arrow.png" alt="cta arrow"></a>
 
 
         </header>
@@ -113,7 +114,7 @@
 
             <h3 id="why">Why?</h3>
             <img class="officiallogo" src="images/logo/logo.png" alt="logo">
-            <ul class="inspiration">
+            <ul class="inspiration" data-aos="zoom-in-up">
                 <li>Because travel is about meaningful moments. </li>
                 <li>We will help you discover, relax, have fun and keep your spirit alive. </li>
                 <li>Inspire the community by sharing your experience.</li>
@@ -126,16 +127,16 @@
 
 
 
-            <h3 class="how">How?</h3>
+            <h3 class="how ">How?</h3>
 
             <!--            <div id="dashedLine">-->
 
             <section class="plan">
 
 
-            <img class="appmockup1" src="images/frame1.jpg" alt="appmockup1">
+            <img class="appmockup1" src="images/frame1.jpg" alt="appmockup1"  data-aos="zoom-in-up">
 
-                <div class="content">
+                <div class="content"  data-aos="zoom-in-up">
                     <h2>Imagine.Plan.Go!</h2>
                     <p>Plan your trip the smart way and start exploring.<br><br>
 
@@ -146,12 +147,12 @@
 
 
             <section class="play">
-                <img class="appmockup2" src="images/frame2.jpg" alt="GoSee">
+                <img class="appmockup2" src="images/frame2.jpg" alt="GoSee"  data-aos="zoom-in-up">
 
                 <div class="content2">
 
-                    <h2>Transform the experience!</h2>
-                    <p>Every place you visit earns you valuable badges.<br><br>
+                    <h2  data-aos="zoom-in-up">Transform the experience!</h2>
+                    <p  data-aos="zoom-in-up">Every place you visit earns you valuable badges.<br><br>
 
                         Some badges are visible, but most of them are hidden. How many will you discover?<br><br>
 
@@ -164,9 +165,9 @@
 
 
             <section class="share">
-                <img class="appmockup3" src="images/frame3.jpg" alt="appmockup3">
+                <img class="appmockup3" src="images/frame3.jpg" alt="appmockup3"  data-aos="zoom-in-up">
 
-                <div class="content3">
+                <div class="content3"  data-aos="zoom-in-up">
                     <h2>Seize the moment!</h2>
                     <p>Save the progress in repositories and share inspiring new places for the rest to see.<br><br>
 
@@ -242,7 +243,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script src="scipt.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
