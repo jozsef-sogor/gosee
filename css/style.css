@@ -64,9 +64,9 @@ header.full {
 
 nav {
     display: none;
-    
+
     text-align: right;
-   
+
     z-index: 999;
     grid-row: 1;
     height: 100vh;
@@ -136,7 +136,7 @@ nav.show li {
     margin: 6px 0;
     transition: 0.6s ease;
     background-color: white;
-    
+
 }
 
 .x .bar1 {
@@ -235,7 +235,7 @@ h1 {
 #myVideo {
     min-width: 100%;
     height: 100vh;
-    
+
 }
 
 */
@@ -257,6 +257,8 @@ header nav {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;
+
 }
 header nav ul {
   list-style-type: none;
@@ -269,6 +271,7 @@ header nav ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
 header nav ul li {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
@@ -289,13 +292,16 @@ header nav ul li a:hover {
   color: #E84A5F;
 }
 
+/*navigation button*/
+
 .toggle-btn {
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   right: 10px;
   top: 40px;
   cursor: pointer;
+  z-index: 1001;
 }
 .toggle-btn .bar {
   width: 30px;
@@ -313,9 +319,11 @@ header nav ul li a:hover {
   opacity: 1;
   visibility: visible;
 }
+
 #toggle:checked ~ nav ul {
   top: 70px;
 }
+
 #toggle:checked ~ nav ul li {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -336,7 +344,7 @@ header nav ul li a:hover {
           transform: translateY(-8px) rotate(-45deg);
 }
 
-
+/*End of navigation button*/
 
 .header__images {
     grid-area: logo;
