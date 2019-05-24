@@ -21,12 +21,20 @@ $(document).ready(function () {
 
 
 //box opening
-   var opened = 0;
+$(".box").click(function(){
+  if ($(".lid").hasClass("opened")) {
+    $(".lid").removeClass("opened");
+  } else {$(".lid").addClass("opened");}
 
-$(".cache").click(function(){
-  if ($(".cache").hasClass("opened")) {
-    $(".cache").removeClass("opened");
-  } else {$(".cache").addClass("opened");}
+
+  if ($(".inside").hasClass("show")) {
+    $(".inside").removeClass("show");
+  } else {$(".inside").addClass("show");}
+
+
+  if ($(".box").hasClass("s")) {
+    $(".box").removeClass("s");
+  } else {$(".box").addClass("s");}
 
 });
 
