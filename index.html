@@ -175,6 +175,7 @@
 
             </section>
 
+            <div id="modalBackground"></div>
 
 
             <!--</div> End of #dashedLine-->
@@ -193,15 +194,19 @@
 
 
       <div id="signUp" class="modal">
+        <button id="closeModal">X</button>
+
      <form action="submit" class="form">
        <h4>Sign Up</h4>
-       <input type="text" value="">
-       <input type="checkbox" name="" value="">
-       <p>I consent to the processing of my name and e-mail adress etc etc</p>
-       <button type="button" name="button">Sign me up</button>
+       <input type="text" placeholder="Name:" id="name">
+       <input type="text" placeholder="E-mail:" value="" id="email">
+       <span id="gdpr">
+       <input type="checkbox" id="consent" name="consent" value="">
+       <p>I consent to the processing of my name and e-mail adress in order to recivies updates via e-mail about the release of the app and promotional offers.</p>
+        </span>
+       <button type="button" name="button" class="submitBtn">Sign me up</button>
      </form>
    </div>  <!-- End of .modal-->
-
 
 
         <footer>

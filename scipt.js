@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
 
-    
+
 
 
 //box opening
@@ -37,5 +37,33 @@ $(".box").click(function(){
   } else {$(".box").addClass("s");}
 
 });
+
+
+
+//Interaction of the SignUp modal window
+
+$('.box').click(function() {
+  $('#signUp').css('display', 'block');
+});
+
+$('#closeModal').click(function() {
+  $('#signUp').css('display','none');
+  //$('#signUp').css('animation', 'scale-down-center .8s ease-in-out');
+  $(".lid").removeClass("opened");
+  $(".inside").removeClass("show");
+  $(".box").removeClass("s");
+});
+/*
+$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest("#signUp,.box").length) {
+    $('#signUp').css('display','none');
+  }*/
+
+
+
+if ($('consent').is(':checked')) {
+  console.log('checked');
+}
 
 });
