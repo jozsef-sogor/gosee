@@ -23,6 +23,7 @@ $(document).ready(function () {
 //box opening
 $(".box").click(function(){
   if ($(".lid").hasClass("opened")) {
+    $('#signUp').css('display','none');
     $(".lid").removeClass("opened");
   } else {$(".lid").addClass("opened");}
 
