@@ -62,8 +62,18 @@ $(document).click(function(event) {
 
 
 
-if ($('consent').is(':checked')) {
-  console.log('checked');
-}
+$('input[name=consent]').click(function(){
+  if($(this).is(":checked")){
+    console.log('checked');
+    $('.submitBtn').css({'color' : 'white', 'cursor' : 'pointer'});
+  }
+  else {
+    console.log('unchecked');
+    $('.submitBtn').css({'color' : 'rgba(0,0,0,0.1)', 'cursor' : 'not-allowed'});
+
+  }
+});
+
+
 
 });
