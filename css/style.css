@@ -250,18 +250,19 @@ h1 {
 
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-  z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
 
 }
+
 header nav ul {
   font-family: Comfortaa, sans-serif;
   font-weight: 400;
@@ -277,23 +278,25 @@ header nav ul {
 }
 
 header nav ul li {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
 }
+
 header nav ul li a {
-  display: block;
-  font-size: 2em;
-  text-decoration: none;
-  padding: 10px 0;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 header nav ul li a:hover {
-  color: #E84A5F;
+    color: #E84A5F;
 }
 
 /*navigation button*/
@@ -307,45 +310,49 @@ header nav ul li a:hover {
   cursor: pointer;
   z-index: 1001;
 }
+
 .toggle-btn .bar {
-  width: 30px;
-  height: 2px;
-  margin: 7px auto;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    width: 30px;
+    height: 2px;
+    margin: 7px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
 }
+
 .toggle-btn .bar:nth-child(2) {
-  width: 20px;
+    width: 20px;
 }
 
 #toggle:checked ~ nav {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 #toggle:checked ~ nav ul {
-  top: 70px;
+    top: 70px;
 }
 
 #toggle:checked ~ nav ul li {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 #toggle:checked + label.toggle-btn .bar:nth-child(2) {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
 }
+
 #toggle:checked + label.toggle-btn .bar:nth-child(1) {
-  -webkit-transform: translateY(10px) rotate(45deg);
-          transform: translateY(10px) rotate(45deg);
+    -webkit-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
 }
+
 #toggle:checked + label.toggle-btn .bar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /*End of navigation button*/
@@ -391,18 +398,19 @@ header nav ul li a:hover {
 
 /*video mute test*/
 .mute-video {
-  position: absolute;
-    background:url(http://cdn.flaticon.com/png/64/60750.png) no-repeat center;
-    background-size:32px;
-    border:0;
-    width:32px;
-    height:32px;
-    text-indent:-999px;
+    position: absolute;
+    background: url(http://cdn.flaticon.com/png/64/60750.png) no-repeat center;
+    background-size: 32px;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -999px;
     z-index: 999;
 }
+
 .unmute-video {
-    background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat center;
-    background-size:32px;
+    background: url(http://cdn.flaticon.com/png/64/498.png) no-repeat center;
+    background-size: 32px;
     z-index: 999;
 }
 
@@ -754,7 +762,7 @@ footer p {
     justify-content: space-around;
     height: 5em;
     background: #1B0A3B;
-   border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
     padding-top: 10%;
     padding-bottom: 5%;
     margin-top: 10%;
@@ -858,6 +866,17 @@ footer img {
 
   }
 */
+
+    .toggle-btn {
+        display: none;
+    }
+
+
+   header nav {
+
+       position: absolute;
+    }
+
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -941,7 +960,7 @@ footer img {
 
     .content3 {
         padding-bottom: 70%;
-        align-self:center;
+        align-self: center;
         grid-row: 1;
         grid-column: 2;
     }
