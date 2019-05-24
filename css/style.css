@@ -684,7 +684,27 @@ footer {
 }
 
 #signUp {
-    display: none;
+  color: white;
+  font-family: Comfortaa, sans-serif;
+  text-align: center;
+  font-size: 2.5vh;
+  z-index: 1005;
+  width: 90vw;
+  height: 60%;
+  margin: 0 auto;
+  left: 5%;
+  top: 10%;
+  position: fixed;
+  background-image: linear-gradient(to bottom, #30D5AE, #9834FF);
+  border-radius: 15px;
+}
+
+.form {
+  margin: 5%;
+}
+
+.form h4 {
+  padding: 1em;
 }
 
 .supporters {
