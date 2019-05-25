@@ -92,7 +92,7 @@
 
             <img class="svg3" src="graphics/svg3.svg" alt="inspire">
 
-
+<div class="whyTest">
             <h3 id="why">Why?</h3>
             <img class="officiallogo" src="images/logo/logo.png" alt="logo">
             <ul class="inspiration" data-aos="zoom-in-up">
@@ -102,7 +102,7 @@
             </ul>
 
 
-
+</div>
 
 
 
@@ -115,7 +115,7 @@
             <section class="plan">
 
 
-                <img class="appmockup1" src="images/frame1.jpg" alt="appmockup1" data-aos="fade-right">
+                <img class="appmockup1" src="images/frame1.png" alt="appmockup1" data-aos="fade-right">
 
                 <div class="content" data-aos="zoom-in-up">
                     <div class="titlepic1">
@@ -151,7 +151,7 @@
 
 
             <section class="share">
-                <img class="appmockup3" src="images/frame3.jpg" alt="appmockup3" data-aos="fade-right">
+                <img class="appmockup3" src="images/frame2.png" alt="appmockup3" data-aos="fade-right">
 
                 <div class="content3" data-aos="zoom-in-up">
                     <h2>Seize the moment!</h2>
@@ -181,7 +181,6 @@
             </section>
 
 
-
             <!--</div> End of #dashedLine-->
         </main>
 
@@ -194,21 +193,20 @@
             <div class="body"></div>
             <div class="lock"></div>
 
-        </div>
-        <!--End of .box -->
+      <div id="signUp" class="modal">
+        <button id="closeModal">X</button>
 
-
-        <div id="signUp" class="modal">
-            <form action="submit" class="form">
-                <h4>Sign Up</h4>
-                <input type="text" value="">
-                <input type="checkbox" name="" value="">
-                <p>I consent to the processing of my name and e-mail adress etc etc</p>
-                <button type="button" name="button">Sign me up</button>
-            </form>
-        </div> <!-- End of .modal-->
-
-
+     <form action="submit" class="form">
+       <h4>Sign Up</h4>
+       <input type="text" placeholder="Name:" id="name">
+       <input type="text" placeholder="E-mail:" value="" id="email">
+       <span id="gdpr">
+       <input type="checkbox" id="consent" name="consent" value="">
+       <p>I consent to the processing of my name and e-mail adress in order to recivies updates via e-mail about the release of the app and promotional offers.</p>
+        </span>
+       <button type="button" name="submitSignUp" class="submitBtn">Sign me up</button>
+     </form>
+   </div>  <!-- End of .modal-->
 
         <footer>
 
@@ -229,12 +227,12 @@
 
             <div class="socialmedia">
 
-                <a href="https://www.facebook.com/lavazzadanmark/?brand_redir=110931753523"><img alt="fbicon" src="images/fbicon.png"></a>
+                <a href="https://www.facebook.com/"><img alt="fbicon" src="images/fbicon.png"></a>
 
-                <a href="https://www.instagram.com/lavazzaofficial/"><img alt="instaicon" src="images/instaicon.png"></a>
+                <a href="https://www.instagram.com/"><img alt="instaicon" src="images/instaicon.png"></a>
 
 
-                <a href="https://www.youtube.com/user/lavazza"><img alt="ytbicon" src="images/linkedin.png"></a>
+                <a href="https://www.youtube.com/"><img alt="ytbicon" src="images/linkedin.png"></a>
             </div>
         </footer>
     </div> <!-- End of .wrapper -->
