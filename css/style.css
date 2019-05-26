@@ -583,6 +583,14 @@ header nav ul li a:hover {
     /*the video is always 98% pf any viewport's height. It shows more but doesn't strech it (thanks god)*/
 }
 
+#adam {
+    font-size: .5em;
+    width: 100%;
+    z-index: 999;
+    margin-top: 45vh;
+    margin-right: 65vw;
+}
+
 
 /*video mute test*/
 .mute-video {
