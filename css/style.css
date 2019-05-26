@@ -703,8 +703,9 @@ header {
 
     grid-row: 1;
     grid-column: 1;
-    position: relative;
-    bottom: 3vh;
+    /*position: relative;
+    bottom: 3vh;*/
+    margin-top: -30%;
 
 }
 
@@ -1244,8 +1245,9 @@ footer img {
         grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 3;
-        position: relative;
-        bottom: 7vh;
+      /*  position: relative;
+        bottom: 7vh;*/
+        margin-top: -20%;
     }
 
     .svg2desk {
@@ -1510,6 +1512,10 @@ footer img {
 
     .svgTest {
         bottom: 23vh;
+    }
+
+    .svglogodesk {
+        margin-top: -18%;
     }
 
     .arrow {
