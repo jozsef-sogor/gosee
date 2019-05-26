@@ -460,7 +460,7 @@ header nav ul {
     transition: all 0.3s ease-in-out;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    
+
 }
 
 header nav ul li {
@@ -598,6 +598,23 @@ header nav ul li a:hover {
     background: url(http://cdn.flaticon.com/png/64/498.png) no-repeat center;
     background-size: 32px;
     z-index: 999;
+}
+
+#notification {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 80vh;;
+  left: 85vw;
+  max-width: 3em;
+  padding: 1em;
+  margin: auto;
+  background-color: red;
+  border-radius: 100%;
+  z-index: 1006;
+  -webkit-box-shadow: 18px 15px 39px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 18px 15px 39px -6px rgba(0,0,0,0.75);
+box-shadow: 18px 15px 39px -6px rgba(0,0,0,0.75);
+
 }
 
 
@@ -1207,9 +1224,9 @@ footer img {
     .svg3 {
         display: none;
     }
-    
+
     .svg4 {
-        
+
         display: none;
     }
     .svglogodesk {
@@ -1240,7 +1257,7 @@ footer img {
         grid-row: 8;
 
     }
-    
+
     .svg4desk {
         display: block;
         width: 100%;
@@ -1282,7 +1299,7 @@ footer img {
         color: #003488;
     }
 
-   
+
 
 
 
@@ -1469,6 +1486,10 @@ footer img {
 
 
 @media only screen and (min-width: 1000px) {
+
+    #notification {
+      display: none;
+    }
 
     .lock {
         margin: auto;
