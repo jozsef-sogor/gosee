@@ -8,6 +8,14 @@
  * animation scale-up-center
  * ----------------------------------------
  */
+
+@font-face {
+    font-family:'Phosphate'; 
+    src: url(../fonts/PhosphateSolid.ttf);
+}
+
+
+
 @-webkit-keyframes scale-up-center {
     0% {
         -webkit-transform: scale(0);
@@ -180,6 +188,45 @@
 }
 
 
+/*slideshow animation*/
+
+/*
+@keyframes slide {
+    from {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+
+.slideshow {
+    margin-top: 5%;
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+.slideshow img {
+
+    width: 100%;
+    display: none;
+}
+
+img.shown {
+    display: block;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+*/
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -187,6 +234,9 @@ html {
 body {
     overflow-x: hidden;
 }
+
+
+
 
 
 
@@ -455,7 +505,7 @@ header nav ul {
     padding: 0;
     margin: 0;
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: 170px;
     transition: all 0.3s ease-in-out;
     -webkit-transform: translateX(-50%);
@@ -587,6 +637,8 @@ header nav ul li a:hover {
     z-index: 999;
     margin-top: 45vh;
     margin-right: 65vw;
+    
+    
 }
 
 
@@ -661,6 +713,14 @@ box-shadow: 18px 15px 39px -6px rgba(0,0,0,0.75);
 
 }
 
+span {
+    color: #259E71;
+    text-transform: uppercase;
+}
+
+.introtext h1 {
+   font-family: 'Phosphate' , sans-serif;
+}
 
 .arrow {
     margin: auto;
@@ -734,7 +794,7 @@ main h3 {
 
 #why {
     position: relative;
-    bottom: 1.4em;
+    bottom: 2em;
 }
 
 
