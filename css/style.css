@@ -558,8 +558,7 @@ nav ul li a {
     justify-content: flex-start;
     margin-right: -50%;
     overflow: hidden;
-    background: #00f;
-
+    
 }
 
 #myVideo {
@@ -743,7 +742,7 @@ main h3 {
 
 #why {
     position: relative;
-    bottom: 13vh;
+    bottom: 10vh;
     font-size: 2.7em;
 }
 
