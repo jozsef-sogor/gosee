@@ -23,11 +23,10 @@ $('.hamburgerMenu').click(function(){
   console.log('clicked');
   $('.mobileNav').slideToggle();
   $('body').addClass('mobileOpen');
-  console.log(navigationClick);
 
 });
 
-$('li', 'nav', '.mobileNav').click(function() {
+$('main, .mobileNav, img').click(function() {
 if ($('body').hasClass('mobileOpen')) {
 console.log('mobile dropdown is closed');
   $('.mobileNav').slideUp();
