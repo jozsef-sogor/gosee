@@ -10,7 +10,7 @@
  */
 
 @font-face {
-    font-family:'Phosphate'; 
+    font-family:'Phosphate';
     src: url(../fonts/PhosphateSolid.ttf);
 }
 
@@ -235,6 +235,7 @@ html {
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -482,118 +483,50 @@ h1 {
 
 
 
+.desktopNav {
+  display: none;
+}
 
+.hamburgerMenu {
+  z-index: 1006;
+  position: absolute;
+  top: 3vh;
+  right: 2vh;
+  z-index: 1010;
+font-size: 1.5em;
+}
 
+.hamburgerMenu i {
+  color: #fff;
+}
 
-
-header nav {
-    background-color: rgba(0, 0, 0, 0.8);
-   opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   visibility: hidden;
-  position: fixed;
-    transition: all 0.3s ease-in-out;
-    z-index: 999;
+nav {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 15vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  height: 70vh;
+  z-index: 1005;
+  position: absolute;
 
 }
 
-header nav ul {
-    font-family: Comfortaa, sans-serif;
-    font-weight: 400;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 40%;
-    top: 170px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-
+nav ul li {
+  padding: 1em;
+  transition: .4s;
 }
 
-header nav ul li {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
+nav ul li:hover {
+  text-decoration: underline;
+  background-color: rgba(256,256,256,0.2);
 }
 
-header nav ul li a {
-    display: block;
-    font-size: 2em;
-    text-decoration: none;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
-header nav ul li a:hover {
-    color: #E84A5F;
-}
-
-/*navigation button*/
-
-.toggle-btn {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    right: 10px;
-    top: 4vh;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.toggle-btn .bar {
-    width: 30px;
-    height: 2px;
-    margin: 7px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
-}
-
-.toggle-btn .bar:nth-child(2) {
-    width: 20px;
-}
-
-#toggle:checked ~ nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-#toggle:checked ~ nav ul {
-    top: 70px;
-}
-
-#toggle:checked ~ nav ul li {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-#toggle:checked + label.toggle-btn .bar:nth-child(2) {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-}
-
-#toggle:checked + label.toggle-btn .bar:nth-child(1) {
-    -webkit-transform: translateY(10px) rotate(45deg);
-    transform: translateY(10px) rotate(45deg);
-}
-
-#toggle:checked + label.toggle-btn .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/*End of navigation button*/
 
 .header__images {
     grid-area: logo;
@@ -639,8 +572,8 @@ header nav ul li a:hover {
     z-index: 999;
     margin-top: 45vh;
     margin-right: 65vw;
-    
-    
+
+
 }
 
 
@@ -734,7 +667,7 @@ span {
     position: relative;
     justify-self: center;
 
-    webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 
 }
@@ -1348,28 +1281,6 @@ footer img {
 
 
 
-    .toggle-btn {
-        display: none;
-    }
-
-
-
-
-    header nav {
-        display: flex;
-        flex-flow: row nowrap;
-        transform: none;
-        padding-top: 1%;
-    }
-
-    .wrapper header nav ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        font-size: 1.3em;
-        font-family: 'Lato';
-        color: #003488;
-    }
 
 
 
@@ -1569,6 +1480,43 @@ footer img {
 
 
 @media only screen and (min-width: 1000px) {
+
+  /*Desktop navigation*/
+
+  .hamburgerMenu {
+    display: none;
+  }
+
+.desktopNav {
+display: block;
+position: absolute;
+right: 1.5em;
+top: 1em;
+}
+
+.desktopNav ul {
+font-size: 1.2em;
+
+}
+
+.desktopNav ul li {
+display:inline-block;
+padding: .7em 2em;
+margin: .3em 0;
+}
+
+.desktopNav ul li:hover {
+text-decoration: underline;
+background-color: rgba(0,0,0,0.6);
+transition: .5s;
+}
+
+.desktopNav ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+/*End of desktop navigation*/
 
     #notification {
       display: none;
