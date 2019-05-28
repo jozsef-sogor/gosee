@@ -76,19 +76,6 @@ console.log('mobile dropdown is closed');
         $(".inside").removeClass("show");
         $(".box").removeClass("s");
     });
-<<<<<<< HEAD
-    
-    
-    
-    
-    /*
-    $(document).click(function(event) {
-      //if you click on anything except the modal itself or the "open modal" link, close the modal
-      if (!$(event.target).closest("#signUp,.box").length) {
-        $('#signUp').css('display','none');
-      }*/
-=======
->>>>>>> 36fd1b8f9342b16dc4b3865a35e6219be0343e58
 
 
 
