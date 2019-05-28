@@ -31,7 +31,7 @@ $('li', 'nav', '.mobileNav').click(function() {
 if ($('body').hasClass('mobileOpen')) {
 console.log('mobile dropdown is closed');
   $('.mobileNav').slideUp();
-  $('.hamburgerMenu').removeClass('mobileOpen');
+  $('body').removeClass('mobileOpen');
 }
 });
 
