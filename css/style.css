@@ -320,7 +320,7 @@ nav {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: .7em 1em;
-    max-width: 20%;
+    max-width: 40%;
     margin: auto;
 }
 
@@ -1228,6 +1228,9 @@ footer img {
 @media only screen and (min-width: 768px) {
 
 
+    #notify {
+      max-width: 20%;
+    }
 
     #adam {
         font-size: 0.3em;
