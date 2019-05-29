@@ -316,10 +316,12 @@ nav {
 */
 
 
-.notify {
+#notify {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: .7em 1em;
+    max-width: 20%;
+    margin: auto;
 }
 
 /*
@@ -1225,7 +1227,7 @@ footer img {
 
 @media only screen and (min-width: 768px) {
 
-  
+
 
     #adam {
         font-size: 0.3em;
@@ -1553,7 +1555,9 @@ footer img {
         font-size: 4.5em;
     }
 
-
+    #notify {
+      max-width: 100%;
+    }
 
     .introtext h2 {
         font-size: .6em;
